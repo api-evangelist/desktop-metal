@@ -1,0 +1,59 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Desktop Metal
+providerId: desktop-metal
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- 3D Printing
+- Additive Manufacturing
+- Metal
+- Hardware
+- Manufacturing Software
+- Plans
+description: >-
+  Desktop Metal sells additive manufacturing hardware (binder jet and Bound
+  Metal Deposition metal/polymer 3D printers, sintering furnaces), materials,
+  and the Live Suite software hub through an enterprise / capital-equipment
+  sales model with quotes via direct sales and channel partners. There is no
+  public, self-service, usage-metered API pricing because Desktop Metal does
+  not expose a documented public developer API. System, material, service,
+  and software-subscription pricing is not published and is negotiated per
+  customer; values below are not reconciled.
+notes: >-
+  Pricing for printers, furnaces, materials, and Live Suite software is quoted
+  by Desktop Metal sales and partners and is not publicly listed. Desktop Metal
+  is a subsidiary of Nano Dimension (acquisition closed April 2, 2025); contact
+  the vendor for current commercial terms.
+sources:
+- https://www.desktopmetal.com/products/live-suite
+- https://www.desktopmetal.com/contact
+plans:
+- id: desktop-metal-enterprise
+  name: Enterprise / Capital Equipment
+  type: enterprise
+  description: >-
+    Hardware (printers, furnaces), qualified materials, installation and
+    service, and Live Suite software licensing sold via direct sales and
+    channel partners under negotiated commercial terms. No public API pricing.
+  entries:
+  - label: Enterprise Agreement
+    name: enterprise
+    type: flat
+    metric: contract
+    limit: -1
+    timeFrame: year
+    geo: global
+    unit: 1
+    price: contact sales
+    userMultiplied: false
+  elements:
+  - name: 3D Printing Systems
+  - name: Sintering Furnaces
+  - name: Materials
+  - name: Live Suite Software
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

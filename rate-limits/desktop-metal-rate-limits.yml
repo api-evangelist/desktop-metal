@@ -1,0 +1,40 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Desktop Metal
+providerId: desktop-metal
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- 3D Printing
+- Additive Manufacturing
+- Metal
+- Hardware
+- Manufacturing Software
+- Rate Limiting
+- Quotas
+- Throttling
+description: >-
+  Desktop Metal does not document a public developer API, so there are no
+  published HTTP rate limits, quotas, or throttling policies to reconcile.
+  The Live Suite / Live Monitor surfaces are browser-based product UIs with
+  exportable data rather than a metered API. If any private or partner
+  integration interface exists, its limits are not publicly documented.
+notes: >-
+  No public API rate-limit documentation exists. Revisit if Desktop Metal or
+  its parent Nano Dimension publishes a developer API with documented limits.
+sources:
+- https://www.desktopmetal.com/products/live-suite
+- https://www.desktopmetal.com/products/live-monitor
+responseCodes: {}
+limits: []
+policies:
+- name: No Published API Limits
+  description: >-
+    Desktop Metal exposes no documented public API and therefore publishes no
+    rate limits. This artifact is a placeholder pending any future developer
+    API.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

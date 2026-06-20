@@ -1,0 +1,97 @@
+aid: desktop-metal
+name: Desktop Metal
+review:
+  question: Does Desktop Metal expose a documented public or partner developer API?
+  answer: false
+  date: '2026-06-20'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was created. Desktop Metal does not document any
+    streaming, event, WebSocket, SSE, or messaging API. Live Monitor surfaces
+    real-time data through a web browser UI and exportable history, not through
+    a documented public streaming transport.
+findings:
+  summary: |
+    Desktop Metal is an additive manufacturing (3D printing) hardware and
+    software company. Its products are binder jet and Bound Metal Deposition
+    metal/polymer 3D printers, sintering furnaces, qualified materials, and the
+    Live Suite software hub (Live Platform, Live Studio, Live Build MFG/DLP,
+    Live Sinter, Live Monitor) that replaced the legacy Fabricate and
+    Fabricate MFG desktop applications. As of the review date, Desktop Metal
+    does NOT publish a documented public or partner developer API: no REST/HTTP
+    API reference, OpenAPI specification, SDK, OAuth/developer portal, or
+    webhook surface could be found on desktopmetal.com or in press/product
+    materials. The closest integration-flavored capability is Live Monitor,
+    which presents fleet/printer/furnace telemetry (job and event status, time
+    reporting, consumable usage, OEE) in a web browser with a 30-day history
+    "exportable for trend analysis" and positioned for "regulatory compliance
+    or Industry 4.0 integration" — but this is a product UI plus data export,
+    not a documented programmatic API. The cataloged surfaces (Printer Fleet &
+    Live Suite, Fabricate Software, Materials) are therefore modeled as product
+    features, and the OpenAPI document intentionally ships with paths: {}.
+  ownership: |
+    Desktop Metal is a subsidiary of Nano Dimension Ltd. Nano Dimension and
+    Desktop Metal announced a definitive acquisition agreement in July 2024; the
+    transaction closed on April 2, 2025 (valued at roughly $179 million).
+    Following the close, Desktop Metal filed for Chapter 11 bankruptcy
+    protection on July 28, 2025. Any future developer API would most plausibly
+    emerge under Nano Dimension's combined additive-manufacturing software
+    portfolio; none is documented as of this review.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API reference or base URL is documented for any Desktop Metal product.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented.
+    - protocol: SSE
+      scheme: https
+      documented: false
+      note: No Server-Sent Events streaming surface is documented. Live Monitor is a browser UI with data export, not a documented stream.
+  productSurfaces:
+    - name: Printer Fleet & Live Suite (Live Platform, Live Monitor)
+      type: Product Feature
+      api: false
+      note: Browser-based provisioning, monitoring, and 30-day exportable history; no documented public API.
+    - name: Fabricate Software (Live Studio, Live Build MFG/DLP)
+      type: Product Feature
+      api: false
+      note: Build preparation and slicing applications; legacy Fabricate replaced by Live Studio/Live Build. No documented public API.
+    - name: Materials
+      type: Product Feature
+      api: false
+      note: Qualified material portfolio and process profiles presented as a catalog; no documented public API.
+sources:
+  - url: https://www.desktopmetal.com/products/live-suite
+    type: Documentation
+    note: Live Suite product hub (Live Platform, Live Studio, Live Build, Live Sinter, Live Monitor); no API/SDK/developer references.
+  - url: https://www.desktopmetal.com/products/live-monitor
+    type: Documentation
+    note: Live Monitor browser dashboards; 30-day exportable history for trend analysis and Industry 4.0 integration; no documented public API.
+  - url: https://github.com/DesktopMetal
+    type: SourceCode
+    note: GitHub organization contains forks (CuraEngine, Cura, Grafana, Meteor utilities); no public API, OpenAPI spec, SDK, or API client.
+  - url: https://ir.desktopmetal.com/news/press-releases/detail/163/desktop-metal-launches-live-monitor-for-users-of
+    type: PressRelease
+    note: Live Monitor launch (October 2023) describing fleet/printer/furnace monitoring and data export.
+  - url: https://www.businesswire.com/news/home/20230306005256/en/Desktop-Metal-Launches-Live-Suite
+    type: PressRelease
+    note: Live Suite launch describing Live Studio replacing Fabricate and Live Build MFG replacing Fabricate MFG.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No public or partner API surface exists to model. apis.yml documents the
+    three product surfaces as product features with humanURLs, the OpenAPI
+    document ships with paths: {} and an accurate description, and Plans /
+    RateLimits / FinOps artifacts are marked reconciled: false to reflect the
+    enterprise / capital-equipment (non-API, non-usage-metered) model. No
+    AsyncAPI document was created because no streaming surface is documented.
+    The Nano Dimension ownership and 2025 Chapter 11 filing are recorded for
+    future revisits.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

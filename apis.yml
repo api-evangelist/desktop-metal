@@ -1,0 +1,97 @@
+aid: desktop-metal
+url: https://raw.githubusercontent.com/api-evangelist/desktop-metal/refs/heads/main/apis.yml
+name: Desktop Metal
+kind: company
+description: Desktop Metal designs and manufactures additive manufacturing (3D printing)
+  hardware and software for metal and polymer parts, including binder jet and Bound
+  Metal Deposition printers, sintering furnaces, materials, and the cloud/desktop Live
+  Suite software (Live Platform, Live Studio, Live Build, Live Sinter, Live Monitor)
+  that replaced the legacy Fabricate applications. As of April 2025 Desktop Metal is
+  a subsidiary of Nano Dimension. No public or partner developer API is documented;
+  the surfaces below are product features rather than published HTTP APIs.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- 3D Printing
+- Additive Manufacturing
+- Metal
+- Hardware
+- Manufacturing Software
+created: '2026-06-20'
+modified: '2026-06-20'
+specificationVersion: '0.19'
+apis:
+- aid: desktop-metal:printer-fleet-live-suite
+  name: Printer Fleet & Live Suite
+  tags:
+  - Fleet Management
+  - Live Suite
+  - Live Monitor
+  - Product Feature
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.desktopmetal.com/products/live-suite
+  properties:
+  - url: https://www.desktopmetal.com/products/live-suite
+    type: Documentation
+  - url: https://www.desktopmetal.com/products/live-monitor
+    type: Documentation
+  - url: openapi/desktop-metal-openapi.yml
+    type: OpenAPI
+  description: Live Platform provisions and manages Desktop Metal AM systems and users,
+    and Live Monitor surfaces real-time fleet, printer, and furnace data (job/event
+    status, time reporting, consumable usage, OEE) in a web browser with 30-day exportable
+    history for trend analysis and Industry 4.0 integration. This is delivered as a
+    product UI and data export, not as a documented public REST/HTTP API.
+- aid: desktop-metal:fabricate-software
+  name: Fabricate Software
+  tags:
+  - Build Preparation
+  - Slicing
+  - Live Studio
+  - Live Build
+  - Product Feature
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.desktopmetal.com/products/live-suite
+  properties:
+  - url: https://www.desktopmetal.com/products/live-suite
+    type: Documentation
+  - url: openapi/desktop-metal-openapi.yml
+    type: OpenAPI
+  description: Build preparation and slicing software for Desktop Metal printers. The
+    legacy Fabricate and Fabricate MFG desktop applications have been replaced and
+    upgraded by Live Studio (cloud build preparation for Bound Metal Deposition / Studio
+    System) and Live Build MFG/DLP (binder jet and DLP build preparation). Distributed
+    as installable/cloud applications; no documented public API surface.
+- aid: desktop-metal:materials
+  name: Materials
+  tags:
+  - Materials
+  - Metal
+  - Polymer
+  - Product Feature
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.desktopmetal.com/materials
+  properties:
+  - url: https://www.desktopmetal.com/materials
+    type: Documentation
+  - url: openapi/desktop-metal-openapi.yml
+    type: OpenAPI
+  description: Qualified metal, polymer, composite, ceramic, sand, and wood material
+    portfolio for Desktop Metal's binder jet, Bound Metal Deposition, and DLP/polymer
+    systems, with associated material parameters and process profiles. Presented as
+    a product catalog; no documented public API for material data.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/desktop-metal
+- type: Website
+  url: https://www.desktopmetal.com
+- type: Documentation
+  url: https://www.desktopmetal.com/products/live-suite
+- type: Plans
+  url: plans/desktop-metal-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/desktop-metal-rate-limits.yml
+- type: FinOps
+  url: finops/desktop-metal-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

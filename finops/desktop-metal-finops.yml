@@ -1,0 +1,93 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Desktop Metal
+providerId: desktop-metal
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- 3D Printing
+- Additive Manufacturing
+- Metal
+- Hardware
+- Manufacturing Software
+- FinOps
+- Cost Management
+- FOCUS
+description: >-
+  FinOps view of Desktop Metal spend. Desktop Metal sells additive
+  manufacturing hardware (printers, sintering furnaces), consumable materials
+  and binders, service contracts, and Live Suite software licensing under an
+  enterprise / capital-equipment model. There is no usage-based public API
+  billing because no public developer API is documented. Cost management here
+  concerns capital equipment, consumables, and software subscriptions rather
+  than metered API consumption; meters below are not reconciled against any
+  published billing data.
+notes: >-
+  Desktop Metal does not bill a public API. Hardware, materials, service, and
+  software pricing is negotiated and not published. Desktop Metal is a
+  subsidiary of Nano Dimension (acquisition closed April 2, 2025). Verify
+  commercial and billing terms with the vendor.
+sources:
+- https://www.desktopmetal.com/products/live-suite
+- https://www.desktopmetal.com/contact
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Desktop Metal
+serviceCategory: Manufacturing
+billingModel:
+  pricingCategory: Enterprise
+  billingFrequency: Negotiated
+  billingCurrency: USD
+  chargeCategories:
+  - Purchase
+  - Usage
+focusColumns:
+  ServiceName: Desktop Metal Additive Manufacturing
+  ServiceCategory: Manufacturing
+  ProviderName: Desktop Metal
+  PublisherName: Desktop Metal
+  InvoiceIssuerName: Desktop Metal
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+  PricingCategory: Enterprise
+meters:
+- name: hardware_systems
+  description: Capital purchase of printers and sintering furnaces, quoted per unit.
+  unit: units
+  aggregation: sum
+  dimensions:
+  - account
+  - product
+- name: consumable_materials
+  description: Metal/polymer powders, rods, and binders consumed per build, priced per unit.
+  unit: units
+  aggregation: sum
+  dimensions:
+  - account
+  - material
+- name: software_subscriptions
+  description: Live Suite software licensing and subscriptions, billed per negotiated term.
+  unit: subscriptions
+  aggregation: sum
+  dimensions:
+  - account
+  - product
+principles:
+- name: Visibility
+  description: Track equipment, consumable, and software spend through vendor invoices; Live Monitor exports support per-machine utilization analysis.
+- name: Allocation
+  description: Map machines, materials, and software seats to programs and cost centers.
+- name: Optimization
+  description: Use Live Monitor OEE/utilization data to maximize capacity and reduce consumable waste.
+- name: Accountability
+  description: Assign owners per machine/program and review capital and consumable spend against budget.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

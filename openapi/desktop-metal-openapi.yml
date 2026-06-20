@@ -1,0 +1,26 @@
+openapi: 3.0.1
+info:
+  title: Desktop Metal API
+  description: >-
+    No public or partner developer API is documented by Desktop Metal as of the
+    review date (2026-06-20). Desktop Metal's products are additive manufacturing
+    hardware (binder jet and Bound Metal Deposition metal/polymer 3D printers and
+    sintering furnaces) plus the Live Suite software hub (Live Platform, Live
+    Studio, Live Build MFG/DLP, Live Sinter, Live Monitor) that replaced the legacy
+    Fabricate desktop applications. Live Monitor exposes fleet/printer/furnace data
+    through a web browser UI with 30-day exportable history for trend analysis and
+    "Industry 4.0 integration," but Desktop Metal does not publish a documented HTTP
+    REST API, OpenAPI specification, SDK, or webhook surface for these capabilities.
+    This document therefore contains no operations (paths is intentionally empty).
+    Desktop Metal is a subsidiary of Nano Dimension following the acquisition that
+    closed April 2, 2025. Update this specification if and when Desktop Metal (or
+    Nano Dimension) publishes a developer API.
+  termsOfService: https://www.desktopmetal.com/terms-of-use
+  contact:
+    name: Desktop Metal
+    url: https://www.desktopmetal.com/contact
+  version: '0.0'
+servers:
+  - url: https://www.desktopmetal.com
+    description: Marketing and product site (no API surface).
+paths: {}
