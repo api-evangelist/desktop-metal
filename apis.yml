@@ -80,6 +80,8 @@ apis:
     systems, with associated material parameters and process profiles. Presented as
     a product catalog; no documented public API for material data.
 common:
+- type: DomainSecurity
+  url: security/desktop-metal-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/desktop-metal
 - type: Website
