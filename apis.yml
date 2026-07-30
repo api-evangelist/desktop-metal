@@ -9,7 +9,19 @@ description: Desktop Metal designs and manufactures additive manufacturing (3D p
   that replaced the legacy Fabricate applications. As of April 2025 Desktop Metal is
   a subsidiary of Nano Dimension. No public or partner developer API is documented;
   the surfaces below are product features rather than published HTTP APIs.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: enterprise
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Enterprise
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/desktop-metal.png
 tags:
 - 3D Printing
 - Additive Manufacturing
