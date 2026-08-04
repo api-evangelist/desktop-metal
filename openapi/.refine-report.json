@@ -1,0 +1,14 @@
+{
+  "provider": "desktop-metal",
+  "sources": [
+    "desktop-metal-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived desktop-metal-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
