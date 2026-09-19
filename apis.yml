@@ -36,6 +36,12 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/desktop-me
 tags:
 - 3D Printing
 - Additive Manufacturing
+- Metals
+- Hardware
+- Manufacturing Software
+tags_raw:
+- 3D Printing
+- Additive Manufacturing
 - Metal
 - Hardware
 - Manufacturing Software
@@ -87,6 +93,11 @@ apis:
 - aid: desktop-metal:materials
   name: Materials
   tags:
+  - Materials
+  - Metals
+  - Polymer
+  - Product Feature
+  tags_raw:
   - Materials
   - Metal
   - Polymer
