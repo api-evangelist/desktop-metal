@@ -46,7 +46,7 @@ tags_raw:
 - Hardware
 - Manufacturing Software
 created: '2026-06-20'
-modified: '2026-06-20'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - aid: desktop-metal:printer-fleet-live-suite
@@ -114,6 +114,8 @@ apis:
     systems, with associated material parameters and process profiles. Presented as
     a product catalog; no documented public API for material data.
 common:
+- url: https://www.desktopmetal.com/press
+  type: Blog
 - type: DomainSecurity
   url: security/desktop-metal-domain-security.yml
 - type: LinkedIn
