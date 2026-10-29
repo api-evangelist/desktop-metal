@@ -1,4 +1,4 @@
-# Desktop Metal (desktop-metal)
+# Desktop Metal
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,95 +66,109 @@
 
 Desktop Metal designs and manufactures additive manufacturing (3D printing) hardware and software for metal and polymer parts, including binder jet and Bound Metal Deposition printers, sintering furnaces, materials, and the cloud/desktop Live Suite software (Live Platform, Live Studio, Live Build, Live Sinter, Live Monitor) that replaced the legacy Fabricate applications. As of April 2025 Desktop Metal is a subsidiary of Nano Dimension. No public or partner developer API is documented; the surfaces below are product features rather than published HTTP APIs.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/desktop-metal/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/desktop-metal/refs/heads/main/apis.yml)
+**Areas:** 3D Printing · Metals · Hardware · Manufacturing Software
 
-## Tags
+## Desktop Metal on APIs.io
 
-- 3D Printing
-- Additive Manufacturing
-- Metal
-- Hardware
-- Manufacturing Software
+Everything profiled for Desktop Metal is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/desktop-metal/](https://apis.io/providers/desktop-metal/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (3)
 
-- **Created:** 2026-06-20
-- **Modified:** 2026-06-20
+- [Printer Fleet & Live Suite](https://apis.io/apis/desktop-metal/printer-fleet-live-suite/) — Live Platform provisions and manages Desktop Metal AM systems and users, and Live Monitor surfaces real-time fleet, printer, and furnace data (job/event…
+- [Fabricate Software](https://apis.io/apis/desktop-metal/fabricate-software/) — Build preparation and slicing software for Desktop Metal printers. The legacy Fabricate and Fabricate MFG desktop applications have been replaced and…
+- [Materials](https://apis.io/apis/desktop-metal/materials/) — Qualified metal, polymer, composite, ceramic, sand, and wood material portfolio for Desktop Metal's binder jet, Bound Metal Deposition, and DLP/polymer…
 
-## APIs
+### Published properties
 
-### Printer Fleet & Live Suite
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Live Platform provisions and manages Desktop Metal AM systems and users, and Live Monitor surfaces real-time fleet, printer, and furnace data (job/event status, time reporting, consumable usage, OEE) in a web browser with 30-day exportable history for trend analysis and Industry 4.0 integration. This is delivered as a product UI and data export, not as a documented public REST/HTTP API.
+#### Collections (1)
 
-- **Human URL:** [https://www.desktopmetal.com/products/live-suite](https://www.desktopmetal.com/products/live-suite)
+Postman and Open Collection request collections.
 
-#### Tags
+- [Desktop Metal](https://apis.io/collections/desktop-metal/open-desktop-metal/)
 
-- Fleet Management
-- Live Suite
-- Live Monitor
-- Product Feature
+#### Security (1)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://www.desktopmetal.com/products/live-suite)
-- [Documentation](https://www.desktopmetal.com/products/live-monitor)
-- [OpenAPI](openapi/desktop-metal-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/desktop-metal.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/desktop-metal.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Desktop Metal Domain Security](https://apis.io/security/desktop-metal/desktop-metal-domain-security/)
 
-### Fabricate Software
+#### Plans and pricing (1)
 
-Build preparation and slicing software for Desktop Metal printers. The legacy Fabricate and Fabricate MFG desktop applications have been replaced and upgraded by Live Studio (cloud build preparation for Bound Metal Deposition / Studio System) and Live Build MFG/DLP (binder jet and DLP build preparation). Distributed as installable/cloud applications; no documented public API surface.
+Published plans, tiers and prices.
 
-- **Human URL:** [https://www.desktopmetal.com/products/live-suite](https://www.desktopmetal.com/products/live-suite)
+- [Desktop Metal Plans Pricing](https://apis.io/plans/desktop-metal/desktop-metal-plans-pricing/)
 
-#### Tags
+#### Rate limits (1)
 
-- Build Preparation
-- Slicing
-- Live Studio
-- Live Build
-- Product Feature
+Published request limits.
 
-#### Properties
+- [Desktop Metal Rate Limits](https://apis.io/rate-limits/desktop-metal/desktop-metal-rate-limits/)
 
-- [Documentation](https://www.desktopmetal.com/products/live-suite)
-- [OpenAPI](openapi/desktop-metal-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/desktop-metal.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/desktop-metal.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### FinOps (1)
 
-### Materials
+What the API costs to run, by operation.
 
-Qualified metal, polymer, composite, ceramic, sand, and wood material portfolio for Desktop Metal's binder jet, Bound Metal Deposition, and DLP/polymer systems, with associated material parameters and process profiles. Presented as a product catalog; no documented public API for material data.
+- [Desktop Metal Finops](https://apis.io/finops/desktop-metal/desktop-metal-finops/)
 
-- **Human URL:** [https://www.desktopmetal.com/materials](https://www.desktopmetal.com/materials)
+## Where to find this API
 
-#### Tags
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- Materials
-- Metal
-- Polymer
-- Product Feature
-
-#### Properties
-
-- [Documentation](https://www.desktopmetal.com/materials)
-- [OpenAPI](openapi/desktop-metal-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/desktop-metal.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/desktop-metal.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/desktop-metal)
 - [Website](https://www.desktopmetal.com)
 - [Documentation](https://www.desktopmetal.com/products/live-suite)
-- [Plans](plans/desktop-metal-plans-pricing.yml)
-- [Rate Limits](rate-limits/desktop-metal-rate-limits.yml)
-- [Fin Ops](finops/desktop-metal-finops.yml)
+- [Blog](https://www.desktopmetal.com/press)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 13.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 25.1 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 5.3 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/desktop-metal/](https://apis.io/providers/desktop-metal/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Desktop Metal: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/desktop-metal/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
